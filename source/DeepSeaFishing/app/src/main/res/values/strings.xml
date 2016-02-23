@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Deep Sea Fishing</string>
+    <string name="welcome_message">Welcome to the Deep Sea Fishing App</string>
+    <string name="author">App made by Brandon Morrissey</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">E-mail</string>
+    <string name="creditcard">Credit Card</string>
+    <string name="customer_add_title">Customer Information</string>
+    <string name="booking_add_title">Booking Information</string>
+    <string name="add_booking">Make Booking</string>
+    <string name="add_title">Add Booking</string>
+    <string name="view_title">View Bookings</string>
+    <string name="booking_view_title">Bookings</string>
+    <string-array name="spinner_times">
+        <item>8AM</item>
+        <item>1PM</item>
+        <item>6PM</item>
+    </string-array>
+</resources>

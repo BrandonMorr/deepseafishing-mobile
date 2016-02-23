@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="me.brandonmorrissey.deepseafishing.Activity_Menu">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/layout_app_bar" />
+
+    <!-- Top banner here -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/sea_banner" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/welcome_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/welcome_message"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            android:typeface="normal" />
+
+    </RelativeLayout>
+
+    <!-- FAB Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FABadd"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_add_white_48px"
+            app:elevation="4dp"
+            app:rippleColor="#ffffff" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FABview"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/FABadd"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_list_white_48px"
+            app:elevation="4dp"
+            app:rippleColor="#ffffff" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FABshare"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_share_white_48px"
+            app:elevation="4dp"
+            app:rippleColor="#ffffff" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FABevent"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/FABshare"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_insert_invitation_white_48px"
+            app:elevation="4dp"
+            app:rippleColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Author text view -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/author" />
+
+    </RelativeLayout>
+
+</LinearLayout>
